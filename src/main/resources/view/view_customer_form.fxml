@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="907.0" style="-fx-background-color: #7efff5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCustomerFormController">
+   <children>
+      <TableView fx:id="tblCustomer" layoutY="100.0" prefHeight="239.0" prefWidth="914.0" styleClass="dashboard-colour2" stylesheets="@../css/table.css">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="95.19998013973236" text="Id" />
+          <TableColumn fx:id="colTitle" prefWidth="85.60001373291016" text="Title" />
+            <TableColumn fx:id="colName" prefWidth="87.19996643066406" text="Name" />
+            <TableColumn fx:id="colDob" minWidth="0.0" prefWidth="109.60003662109375" text="Date of birth" />
+            <TableColumn fx:id="colSalary" prefWidth="83.20001220703125" text="Salary " />
+            <TableColumn fx:id="colAddress" prefWidth="100.0" text="Address" />
+            <TableColumn fx:id="colCity" prefWidth="99.20001220703125" text="City" />
+            <TableColumn fx:id="colProvince" prefWidth="111.199951171875" text="Province" />
+            <TableColumn fx:id="colPostalCode" prefWidth="143.2000732421875" text="Postal Code" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="414.0" layoutY="355.0" onAction="#btnRelaodOnAction" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #4cd137;" text="Reload" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="285.0" layoutY="23.0" text="View Customer ">
+         <textFill>
+            <RadialGradient centerX="0.5530973788911262" centerY="0.4507576046567975" radius="0.43577983401237275">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.10999999940395355" green="0.18341369926929474" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Broadway" size="41.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
